@@ -1,0 +1,105 @@
+.chat {
+  background-color: #343541;
+  display: flex;
+
+  &__side-bar {
+    background-color: #202123;
+    height: 100vh;
+    width: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__button {
+    border: solid 1px rgb(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+  &__footer {
+    border-top: solid 1px rgb(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 10px;
+  }
+  &__history {
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+  }
+  &__item {
+    list-style-type: none;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+
+  &__main {
+    height: 100vh;
+    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  &__feed {
+    overflow: scroll;
+    width: 100%;
+    padding: 0;
+  }
+  &__li {
+    display: flex;
+    background-color: #444654;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  &__p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    text-align: left;
+  }
+  &__role {
+    min-width: 100px;
+  }
+
+  &__info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    padding: 10px;
+  }
+  &__bottom-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__input-container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+  }
+  &__input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+      rgba(0, 0, 0, 0.05) 0 -12px 30px, rgba(0, 0, 0, 0.05) 0 4px 6px,
+      rgba(0, 0, 0, 0.05) 0 12px 3px, rgba(0, 0, 0, 0.05) 0 -3px 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+#submit {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  cursor: pointer;
+}
